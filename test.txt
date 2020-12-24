@@ -1,0 +1,5 @@
+INSERT INTO artresourceprogress(date, designer, initiator, content)
+VALUES
+(now(), 'zhengdongke@corp.netease.com', 'wb.wanglingqian@mesg.corp.netease.com', '提交的测试资源哈哈哈');
+
+SELECT * FROM designers WHERE nickname='郑栋珂';

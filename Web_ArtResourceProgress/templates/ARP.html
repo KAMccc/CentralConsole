@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = 'zh'></html>
+<head>
+    <title> 美术资源跟踪 </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/main.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                美术资源跟踪
+            </h2>
+        </div>
+        <!-- <div class="row">
+            <div class="column side">
+                <ul>
+                    {% for designer in designers %}
+                    <li>
+                        <a href="detail?popo_mail={{ designer.popo_mail }}&&nickname={{ designer.nickname }}">{{ designer.nickname }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+    
+            <div class="column middle">
+                <p>
+                    hhh
+                </p>                
+            </div>
+        </div> -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <!-- <th>POPO MAIL</th> -->
+                    <th>NICKNAME</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for designer in designers %}
+                <tr>
+                    <td>{{designer.id}}</td>
+                    <!-- <td>{{designer.popo_mail}}</td> -->
+                    <td>
+                        <a href="detail?popo_mail={{ designer.popo_mail }}&&nickname={{ designer.nickname }}">{{ designer.nickname }}</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>

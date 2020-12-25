@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('popo/', include('popo_robot.urls')),
     path('ArtResourceProgress/', include('ArtResourceProgress.urls')),
+    path('arp/', include('Web_ArtResourceProgress.urls')),
 
     path('admin/', admin.site.urls),
 ]

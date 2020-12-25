@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'nav.apps.NavConfig',
     'popo_robot.apps.PopoRobotConfig',
     'ArtResourceProgress.apps.ArtresourceprogressConfig',
+    'Web_ArtResourceProgress.apps.WebArtresourceprogressConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -104,6 +105,12 @@ DATABASES = {
         'POST': 3306, # 端口
     }
 }
+
+# 静态文件
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

@@ -3,3 +3,5 @@ VALUES
 (now(), 'zhengdongke@corp.netease.com', 'wb.wanglingqian@mesg.corp.netease.com', '提交的测试资源哈哈哈');
 
 SELECT * FROM designers WHERE nickname='郑栋珂';
+
+send_user=zhengdongke%40corp.netease.com&message=%25resourceget%0D%0A%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%0D%0A%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%0D%0A%0D%0A%40%E9%83%91%E6%A0%8B%E7%8F%82&group=1542560&imgurl=https%3A%2F%2Fpopo.fp.ps.netease.com%2Ffile%2F5fe5b9195e60272a230661faiA63fN6u02

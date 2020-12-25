@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = 'zh'></html>
+<head>
+    <title> DETAIL </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="row">
+        <div class="column side">
+            <h2 style="text-align: center;">
+                美术资源跟踪
+            </h2>
+            <div class="nav">
+                {% for mc in table %}
+                <a >
+                    {{ mc.date }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="column middle">
+            <table class="table table-striped">
+                <h2>
+                    {{ nickname }} 
+                </h2>
+                <a href="{% url 'Web_ArtResourceProgress:index' %}">返回</a>
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>INITIATOR</th>
+                        <th>CONTENT</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    {% for mc in table %}
+                    <tr>
+                        <td>{{ mc.date }}</td>
+                        <td>{{ mc.initiator }}</td>
+                        <td>{{ mc.content }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <table class="table table-striped">
+            <h2>
+                {{ nickname }} 
+            </h2>
+            <a href="{% url 'Web_ArtResourceProgress:index' %}">返回</a>
+            <thead>
+                <tr>
+                    <th>DATE</th>
+                    <th>INITIATOR</th>
+                    <th>CONTENT</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for mc in table %}
+                <tr>
+                    <td>{{ mc.date }}</td>
+                    <td>{{ mc.initiator }}</td>
+                    <td>{{ mc.content }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>

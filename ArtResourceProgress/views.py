@@ -21,10 +21,12 @@ def GetPopoResourcePost(request):
     send_user = request.POST.get('send_user')
     message = request.POST.get('message').replace(" ", "")[9:]
     group = request.POST.get('group')
+    imgurl = request.POST.get('imgurl')
 
     content = message.split('@')[0]
     designers = message.split('@')[1:]
 
+    # print("imgurl:", imgurl)
     # print('send_user:', send_user)
     # print('message:', message)
     # print('group:', group)
@@ -67,6 +69,10 @@ def GetPopoResourcePost(request):
         # 校验名单，获取popo，表链接
         designer_popo = res[0]
         toTableDesigners.append(res)
+
+        # 插入图片
+        if imgurl is not None:
+            content += imgurl
 
         # 入库
         with connection.cursor() as cursor:

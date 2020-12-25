@@ -1,0 +1,71 @@
+/* 头部 */
+.header{
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 列表 // 导航栏 */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* 分列 */
+.column{
+    padding: 20px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 75%;
+}
+
+h2
+{
+    color:orange;
+    text-align:center;
+}
+
+
+/* 表格 */
+table, th, td
+{
+    border: 1px solid black;
+    
+}
+
+th
+{
+    text-align: center;
+    height:50px;
+}
+
+td
+{
+    text-align: center; 
+}
